@@ -17,7 +17,8 @@
     "paths": {
       "@nxtest/employee/feature-employee-information": [
         "libs/employee/feature-employee-information/src/index.ts"
-      ]
+      ],
+      "@nxtest/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
