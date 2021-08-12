@@ -1,3 +1,5 @@
+import { Title } from '@nxtest/ui';
+
 /* eslint-disable-next-line */
 export interface EmployeeFeatureEmployeeRequestProps {}
 
@@ -6,7 +8,9 @@ export function EmployeeFeatureEmployeeRequest(
 ) {
   return (
     <div>
-      <h1>Welcome to EmployeeFeatureEmployeeRequest!</h1>
+      <Title color="lightblue">
+        Welcome to EmployeeFeatureEmployeeRequest!
+      </Title>
     </div>
   );
 }
