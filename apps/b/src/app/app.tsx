@@ -6,6 +6,8 @@ import { Route, Link } from 'react-router-dom';
 import { Title } from '@nxtest/ui';
 import { EmployeeFeatureEmployeeInformation } from '@nxtest/employee/feature-employee-information';
 
+import { EmployeeFeatureEmployeeRequest } from '@nxtest/employee/feature-employee-request';
+
 export function App() {
   return (
     <h1>
@@ -20,6 +22,11 @@ export function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/feature-employee-request">
+              EmployeeFeatureEmployeeRequest
+            </Link>
           </li>
           <li>
             <Link to="/feature-employee-information">
@@ -40,6 +47,10 @@ export function App() {
             <Link to="/page-2">Click here for page 2.</Link>
           </div>
         )}
+      />
+      <Route
+        path="/feature-employee-request"
+        component={EmployeeFeatureEmployeeRequest}
       />
       <Route
         path="/feature-employee-information"

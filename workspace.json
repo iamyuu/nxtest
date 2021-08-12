@@ -170,6 +170,29 @@
         }
       }
     },
+    "employee-feature-employee-request": {
+      "root": "libs/employee/feature-employee-request",
+      "sourceRoot": "libs/employee/feature-employee-request/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/employee/feature-employee-request/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/employee/feature-employee-request"],
+          "options": {
+            "jestConfig": "libs/employee/feature-employee-request/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "ui": {
       "root": "libs/ui",
       "sourceRoot": "libs/ui/src",

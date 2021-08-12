@@ -36,6 +36,9 @@
     "employee-feature-employee-information": {
       "tags": []
     },
+    "employee-feature-employee-request": {
+      "tags": []
+    },
     "ui": {
       "tags": []
     }

@@ -18,6 +18,9 @@
       "@nxtest/employee/feature-employee-information": [
         "libs/employee/feature-employee-information/src/index.ts"
       ],
+      "@nxtest/employee/feature-employee-request": [
+        "libs/employee/feature-employee-request/src/index.ts"
+      ],
       "@nxtest/ui": ["libs/ui/src/index.ts"]
     }
   },
