@@ -146,6 +146,29 @@
           }
         }
       }
+    },
+    "employee-feature-employee-information": {
+      "root": "libs/employee/feature-employee-information",
+      "sourceRoot": "libs/employee/feature-employee-information/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/employee/feature-employee-information/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/employee/feature-employee-information"],
+          "options": {
+            "jestConfig": "libs/employee/feature-employee-information/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -3,6 +3,8 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
+import { EmployeeFeatureEmployeeInformation } from '@nxtest/employee/feature-employee-information';
+
 export function App() {
   return (
     <h1>
@@ -19,6 +21,11 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/feature-employee-information">
+              EmployeeFeatureEmployeeInformation
+            </Link>
+          </li>
+          <li>
             <Link to="/page-2">Page 2</Link>
           </li>
         </ul>
@@ -32,6 +39,10 @@ export function App() {
             <Link to="/page-2">Click here for page 2.</Link>
           </div>
         )}
+      />
+      <Route
+        path="/feature-employee-information"
+        component={EmployeeFeatureEmployeeInformation}
       />
       <Route
         path="/page-2"

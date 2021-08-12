@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxtest/employee/feature-employee-information": [
+        "libs/employee/feature-employee-information/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
