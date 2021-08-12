@@ -3,6 +3,7 @@ import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
 
+import { Title } from '@nxtest/ui';
 import { EmployeeFeatureEmployeeInformation } from '@nxtest/employee/feature-employee-information';
 
 export function App() {
@@ -35,7 +36,7 @@ export function App() {
         exact
         render={() => (
           <div>
-            This is the generated root route.{' '}
+            <Title>This is the generated root route.</Title>
             <Link to="/page-2">Click here for page 2.</Link>
           </div>
         )}
